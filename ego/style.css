@@ -1,0 +1,127 @@
+/* CORE OS STYLES */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling, acting like a desktop */
+    background-color: #008080; /* Classic Windows Teal */
+    /* Alternatively, use an image: background-image: url('alf-dog.jpg'); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* DESKTOP ICONS */
+#desktop {
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 0px black;
+}
+
+.icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+}
+
+.icon p {
+    margin: 0;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px dotted transparent;
+}
+
+.icon:hover p {
+    background-color: #000080;
+    border: 1px dotted yellow;
+}
+
+/* RETRO WINDOW STYLES */
+.window {
+    position: absolute;
+    width: 300px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-bar {
+    background: linear-gradient(90deg, #000080, #1084d0);
+    padding: 3px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move; /* Indicates draggable area */
+}
+
+.title-bar-text {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.title-bar-controls button {
+    width: 20px;
+    height: 18px;
+    font-size: 10px;
+    font-weight: bold;
+    background: #c0c0c0;
+    border: 1px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    cursor: pointer;
+}
+
+.title-bar-controls button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.window-body {
+    padding: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+/* TASKBAR */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    z-index: 9999;
+}
+
+.start-btn {
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    background: #c0c0c0;
+}
+
+.clock {
+    margin-left: auto;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: 2px solid #808080;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    font-size: 12px;
+}
